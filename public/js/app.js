@@ -19484,7 +19484,9 @@ function render(_ctx, _cache) {
 
   }, 8
   /* PROPS */
-  , ["href"])]);
+  , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.appName) + " test", 1
+  /* TEXT */
+  )]);
 }
 
 /***/ }),
@@ -19538,7 +19540,9 @@ function render(_ctx, _cache) {
 
   }, 8
   /* PROPS */
-  , ["href"])]);
+  , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.appName), 1
+  /* TEXT */
+  )]);
 }
 
 /***/ }),

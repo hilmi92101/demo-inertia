@@ -4,6 +4,8 @@
 
         <inertia-link href="/test">Test page</inertia-link> <br>
         <inertia-link :href="route('test')">Test page</inertia-link>
+
+        <p>{{ $page.props.appName }}</p>
           
     </div>  
 </template>
