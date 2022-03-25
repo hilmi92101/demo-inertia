@@ -1,7 +1,7 @@
 require('./bootstrap');
 
 import { createApp, h } from 'vue';
-import { createInertiaApp } from '@inertiajs/inertia-vue3';
+import { createInertiaApp, InertiaLink } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
@@ -13,6 +13,7 @@ createInertiaApp({
         return createApp({ render: () => h(app, props) })
             .use(plugin)
             .mixin({ methods: { route } })
+            .component('InertiaLink', InertiaLink)
             .mount(el);
     },
 });
