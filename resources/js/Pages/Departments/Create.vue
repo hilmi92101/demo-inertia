@@ -27,8 +27,7 @@
                                     id="name" 
                                     class="mt-1 block w-1/2"
                                     v-model="form.name"
-                                    required
-                                    autofocus
+                                    :error="form.errors.name"
                                 >
                                 </breeze-input>
                                 <breeze-input-error :message="form.errors.name"></breeze-input-error>
@@ -40,6 +39,7 @@
                                     id="email" 
                                     class="mt-1 block w-1/2"
                                     v-model="form.email"
+                                    :error="form.errors.email"
                                 >
                                 </breeze-input>
                                 <breeze-input-error :message="form.errors.email"></breeze-input-error>
@@ -52,13 +52,18 @@
                                     id="phone" 
                                     class="mt-1 block w-1/2"
                                     v-model="form.phone"
+                                    :error="form.errors.phone"
                                 >
                                 </breeze-input>
                                 <breeze-input-error :message="form.errors.phone"></breeze-input-error>
                             </div>
 
                             <div class="flex item-center justify-end mt-4">
-                                <breeze-button>Create</breeze-button>
+                                <breeze-button
+                                    :loading="form.processing"
+                                >
+                                Create
+                                </breeze-button>
                             </div>
                         </form>
                         
